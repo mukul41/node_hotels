@@ -3,7 +3,7 @@ const app = express();
 const database = require('./db');
 const User = require('./models/user'); // Import the User model
 const Dishes =require('./models/menuItems')
-const PORT = 4000;
+const PORT = process.env.PORT;
 require('dotenv').config();
 
 const user =require('./models/user')
