@@ -3,8 +3,9 @@ const app = express();
 const database = require('./db');
 const User = require('./models/user'); // Import the User model
 const Dishes =require('./models/menuItems')
-const PORT = process.env.PORT;
 require('dotenv').config();
+
+const PORT = process.env.PORT;
 
 const user =require('./models/user')
 // Middleware to parse incoming JSON requests
